@@ -1,0 +1,369 @@
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding-top: 60px; /* Adjusted for fixed navbar */
+}
+
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #000;
+  color: #fff;
+  height: 60px;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 350;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff9f00;
+}
+
+.logo img {
+  height: 65px;
+  width: auto;
+  max-height: 60%;
+}
+
+.cart a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: url('1.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  padding: 50px 0;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 200px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-family: 'Georgia', serif;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hero-buttons a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 12px 25px;
+  border: 2px solid #fff;
+  border-radius: 0;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.hero-buttons a:hover {
+  background-color: #555;
+  border-color: #555;
+}
+
+/* Intro Section */
+.intro {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Photographer Section */
+.photographer {
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #333; 
+  color: #fff;
+}
+
+/* Photographer Section Video */
+.photographer {
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #333; /* Slightly lighter dark background */
+  color: #fff;
+  height: 100vh; /* Full height of the viewport */
+  box-sizing: border-box; /* Ensure padding is included in the height */
+}
+
+.photographer video {
+  width: 30%;
+  max-width: 420px;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain; 
+  border-radius: 8px; 
+}
+
+.photographer-content {
+  width: 60%;
+  padding-left: 90px; 
+}
+
+.photographer h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.photographer h4 {
+    font-family: 'Coax'; 
+    background-color: #4c4b4b; 
+    color: #fff; /* White text */
+    padding: 15px 15px; /* Add padding for spacing */
+    border-radius: 5px; /* Optional: rounded corners */
+    font-size: 1.1rem; 
+    margin-bottom: 15px;
+}
+
+.photographer p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.photographer-buttons {
+  margin-top: 20px;
+}
+
+.photographer-buttons a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 12px 25px;
+  border: 2px solid #fff;
+  border-radius: 0;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.photographer-buttons a:hover {
+  background-color: #555;
+  border-color: #555;
+}
+
+/* Services Offered Section */
+.services {
+  padding: 50px 20px;
+  background-color: #8f8e8e; 
+  color: #333;
+}
+
+.services-content {
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.services p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service {
+  position: relative;
+  width: 22%;
+  max-width: 300px;
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.service-info {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.service-info h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.service-links {
+  margin-top: 10px;
+}
+
+.service-links a {
+  color: #fff;
+  background-color: #333;
+  padding: 5px 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.service-links a:hover {
+  background-color: #555;
+}
+
+/* Hire Me Section */
+.hire_me {
+  background-color: #444;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.hire_me .photographer-content {
+  width: 70%;
+  padding-right: 10px;
+}
+
+.hire_me .photographer-content p {
+  font-size: 1.1em;
+  line-height: 1.5; 
+}
+
+/* Testimonials Section */
+.testimonials-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .testimonials {
+    display: flex;
+    transition: all 0.5s ease;
+  }
+
+  .testimonial-box {
+    flex: 0 0 50%; /* Two visible testimonials at a time */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .client-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .client-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .arrow-right, .arrow-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 1;
+  }
+
+  .arrow-right {
+    right: 0;
+  }
+
+  .arrow-left {
+    left: 0;
+    display: none; /* Hidden initially */
+  }
+  
