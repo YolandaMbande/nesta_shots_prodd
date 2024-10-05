@@ -1,0 +1,183 @@
+/* Intro Section */
+.intro-section {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 20px;
+    text-align: center;
+    color: rgb(128, 127, 127);
+    height: 450px; /* Decreased height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Background Image */
+.intro-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('about_me/intro_section.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    z-index: 0;
+}
+
+/* Text Styling */
+.intro-section h1, .intro-section h4, .intro-section p {
+    color: rgb(250, 246, 246);
+    margin: 0px;
+}
+
+.intro-section h1 {
+    margin-bottom: 15px;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.intro-section h4 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.intro-section p {
+    margin-top: 0;
+    z-index: 1;
+    position: relative;
+    font-size: 1.7rem;
+}
+
+/*About Me Section*/
+.about-photographer, .about-team, .goals-plans {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    height: 80vh;
+}
+
+.about-photographer {
+    background-color: #444;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    color: #fff;
+}
+
+.about-photographer h2 {
+    text-align: left;
+    font-size: 2.5em; /* Increased font size for better visibility */
+    margin-bottom: 2px; /* Add some space below the heading */
+}
+
+.about-photographer h5 {
+    text-align: left;
+    font-size: 1.1em; /* Increased font size for better visibility */
+    margin-bottom: 5px; /* Add some space below the heading */
+}
+
+.about-photographer p {
+    font-size: 1em; 
+    line-height: 1.5; 
+    max-width: 800px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.about-photographer img {
+    max-width: 370px; 
+    margin: 30px 20px;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 0px; /* Optional: Round the corners of the image */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); /* Shadow around the image */
+}
+
+/* About Team Section */
+.about-team {
+    display: flex;
+    align-items: center;
+    padding: 110px;
+    height: 80vh;
+    background-color: #444;
+}
+
+.about-team-back { 
+    box-shadow: 0 0px 5px rgba(42, 42, 42, 0.3);
+} 
+.about-team h2 {
+    text-align: left;
+    font-size: 2.5em; /* Matches 'About Me' font size */
+    margin-bottom: 10px; /* Spacing below heading */
+    color:aliceblue;
+}
+
+.about-team p {
+    font-size: 1em; 
+    line-height: 1.5; 
+    max-width: 700px;
+    font-family: 'Cormorant Garamond', serif;
+    color:rgb(250, 246, 246);
+}
+
+.about-team img {
+    max-width: 370px; 
+    margin: 30px 20px;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 0px; 
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); /* Shadow around the images */
+}
+
+#second-team-member {
+    max-width: 250px;
+    margin: 30px 20px;
+    padding: 10px;
+    border-radius: 0px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Shadow around the image */
+}
+
+/* Goals and Plans */
+.goals-plans {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    height: 80vh;
+    background-color: #f1eded;
+}
+
+.goals-plans div {
+    color: #3c3c3c;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.goals-plans h2 {
+    text-align: left;
+    font-size: 2.5em; /* Increased font size for better visibility */
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif; /* Matching font style */
+}
+
+.goals-plans p {
+    font-size: 1.1em;
+    line-height: 1.6; 
+    font-family: 'Cormorant Garamond', serif; /* Matching font style */
+    max-width: 600px;
+}
+
+.goals-plans img {
+    max-width: 450px; 
+    margin: 30px 30px;
+    padding: 10px;
+    background-color: #444; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Shadow around the image */
+}
+
+/* Ensure the height of the page is longer than the viewport */
+body {
+    min-height: 200vh; /* Adjust this value as needed */
+}
