@@ -20,7 +20,7 @@
     z-index: 0;
 }
 
-.intro-section h1,
+.intro-section h1, 
 .intro-section h4,
 .intro-section p,
 .about-socials {
@@ -170,7 +170,7 @@
     align-items: center;
     padding: 40px;
     height: 80vh;
-    background-color: #f1eded;
+    background-color: #ffff;
 }
 
 .goals-plans div {
@@ -198,10 +198,9 @@
     margin: 30px 30px;
     padding: 10px;
     background-color: #444; 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Shadow around the image */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); 
 }
 
-/* Ensure the height of the page is longer than the viewport */
 body {
-    min-height: 200vh; /* Adjust this value as needed */
+    min-height: 200vh; 
 }
