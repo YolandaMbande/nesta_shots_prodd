@@ -1,54 +1,78 @@
 /* Intro Section */
+/* INTRO SECTION */
 .intro-section {
     position: relative;
-    overflow: hidden;
-    padding: 80px 20px;
-    text-align: center;
-    color: rgb(128, 127, 127);
-    height: 450px; /* Decreased height */
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
 }
 
-/* Background Image */
 .intro-section::before {
-    content: '';
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('about_me/intro_section.jpg');
-    background-size: cover;
-    background-position: center;
+    inset: 0;
+    background: url("about_me/intro_section.png") center/cover no-repeat;
     filter: blur(2px);
     z-index: 0;
 }
 
-/* Text Styling */
-.intro-section h1, .intro-section h4, .intro-section p {
-    color: rgb(250, 246, 246);
-    margin: 0px;
+.intro-section h1, 
+.intro-section h4,
+.intro-section p,
+.about-socials {
+    position: relative;
+    z-index: 2;
 }
 
 .intro-section h1 {
+    color: #fff;
     margin-bottom: 15px;
     font-size: 3rem;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
 }
 
 .intro-section h4 {
+    color: #fff;
     margin-bottom: 15px;
     font-size: 1.5rem;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
 }
 
 .intro-section p {
-    margin-top: 0;
-    z-index: 1;
-    position: relative;
+    color: #fff;
     font-size: 1.7rem;
+    margin: 0;
+}
+
+.about-socials {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.about-socials a {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.about-socials a:hover {
+    background: #fff;
+    color: #111;
+    transform: translateY(-5px);
 }
 
 /*About Me Section*/
@@ -146,7 +170,7 @@
     align-items: center;
     padding: 40px;
     height: 80vh;
-    background-color: #f1eded;
+    background-color: #ffff;
 }
 
 .goals-plans div {
@@ -174,10 +198,9 @@
     margin: 30px 30px;
     padding: 10px;
     background-color: #444; 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Shadow around the image */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); 
 }
 
-/* Ensure the height of the page is longer than the viewport */
 body {
-    min-height: 200vh; /* Adjust this value as needed */
+    min-height: 200vh; 
 }
