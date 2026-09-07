@@ -548,3 +548,285 @@ nav ul li a:hover {
 }
 
 
+/* ==========================================================
+   RESPONSIVE DESIGN
+   ========================================================== */
+
+/* Tablets and smaller laptops */
+@media (max-width: 992px) {
+
+  /* Navigation */
+  nav {
+    padding: 5px 15px;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  /* Hero */
+  .hero {
+    height: auto;
+    min-height: 80vh;
+    padding: 40px 20px;
+  }
+
+  .hero-content {
+    padding-top: 150px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+  /* Photographer */
+  .photographer {
+    height: auto;
+    min-height: 80vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .photographer video {
+    width: 70%;
+    max-width: 500px;
+    margin-bottom: 30px;
+  }
+
+  .photographer-content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  /* Services */
+  .service {
+    width: 45%;
+  }
+
+  .services h2 {
+    font-size: 2.2rem;
+  }
+
+  .services p {
+    font-size: 1.1rem;
+  }
+
+  /* Hire Me */
+  .hire_me {
+    height: auto;
+    min-height: 70vh;
+  }
+
+  .hire_me .photographer-content {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 600px) {
+    body {
+        background: red !important;
+    }
+
+  /* Navigation */
+  nav {
+    height: 55px;
+    padding: 5px 15px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul li {
+    margin-left: 0;
+  }
+
+  nav ul li a {
+    font-size: 0.85rem;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .cart a {
+    font-size: 0.8rem;
+  }
+
+
+  /* Hero */
+  .hero {
+    min-height: 75vh;
+    padding: 30px 15px;
+  }
+
+  .hero-content {
+    padding-top: 120px;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-buttons a {
+    width: 80%;
+    max-width: 250px;
+    padding: 10px 20px;
+  }
+
+
+  /* Intro */
+  .intro {
+    padding: 40px 20px;
+  }
+
+  .intro h2 {
+    font-size: 1.6rem;
+  }
+
+  .intro p {
+    font-size: 0.95rem;
+  }
+
+
+  /* Photographer */
+  .photographer {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+
+  .photographer video {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 25px;
+  }
+
+  .photographer-content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .photographer h2 {
+    font-size: 1.6rem;
+  }
+
+  .photographer p {
+    font-size: 0.95rem;
+  }
+
+  .photographer-buttons {
+    margin-top: 20px;
+  }
+
+  .photographer-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+
+
+  /* Services */
+  .services {
+    padding: 40px 15px;
+  }
+
+  .services h2 {
+    font-size: 2rem;
+  }
+
+  .services p {
+    font-size: 1rem;
+  }
+
+  .services-list {
+    gap: 25px;
+  }
+
+  .service {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .service-info h3 {
+    font-size: 1.2rem;
+  }
+
+
+  /* Hire Me */
+  .hire_me {
+    height: auto;
+    min-height: 60vh;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hire_me .photographer-content {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .hire_me .photographer-content p {
+    font-size: 1rem;
+  }
+
+}
+
+
+/* ==========================================================
+   VERY SMALL PHONES
+   ========================================================== */
+
+@media (max-width: 400px) {
+
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .intro h2,
+  .photographer h2 {
+    font-size: 1.4rem;
+  }
+
+  .services h2 {
+    font-size: 1.7rem;
+  }
+
+  nav ul li a {
+    font-size: 0.75rem;
+  }
+
+  .hero-buttons a {
+    width: 90%;
+  }
+}
