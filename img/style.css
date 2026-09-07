@@ -805,3 +805,507 @@ h5 {
   z-index: 2; 
 }
 
+/* ==========================================================
+   RESPONSIVE DESIGN
+   ========================================================== */
+
+/* ---------- TABLETS ---------- */
+@media (max-width: 992px) {
+
+  /* Navigation */
+  nav {
+    padding: 5px 15px;
+  }
+
+  nav ul li {
+    margin-left: 15px;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  /* Hero */
+  .hero {
+    height: 80vh;
+    min-height: 600px;
+  }
+
+  .hero-content {
+    padding-top: 250px;
+    transform: scale(0.9);
+  }
+
+  /* Photographer */
+  .photographer {
+    height: auto;
+    min-height: 80vh;
+    gap: 30px;
+  }
+
+  .photographer video {
+    width: 40%;
+  }
+
+  .photographer-card {
+    width: 55%;
+    margin-left: 20px;
+    padding: 30px;
+  }
+
+  /* Services */
+  .services {
+    padding: 70px 40px;
+  }
+
+  .service {
+    width: 45%;
+  }
+
+  /* Hire Me */
+  .hire_me {
+    height: auto;
+    min-height: 70vh;
+  }
+
+  .hire-me-card {
+    width: 80%;
+  }
+
+  /* Testimonials */
+  .testimonials-container {
+    height: auto;
+    min-height: 90vh;
+  }
+
+  .testimonial-box {
+    flex: 0 0 60%;
+  }
+
+  /* Contact */
+  .contact-section {
+    padding: 80px 50px;
+    gap: 40px;
+  }
+
+  .contact-info {
+    width: 50%;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 600px) {
+
+  /* ---------- GENERAL ---------- */
+
+  body {
+    padding-top: 60px;
+    overflow-x: hidden;
+  }
+
+
+  /* ---------- NAVIGATION ---------- */
+
+  nav {
+    height: 60px;
+    padding: 5px 12px;
+  }
+
+  nav ul {
+    gap: 10px;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin-left: 0;
+  }
+
+  nav ul li a {
+    font-size: 0.75rem;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .cart a {
+    font-size: 0.75rem;
+  }
+
+
+  /* ---------- HERO ---------- */
+
+  .hero {
+    height: auto;
+    min-height: 75vh;
+    padding: 40px 20px;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding-top: 180px;
+    transform: scale(1);
+  }
+
+  .hero h1 {
+    font-size: 1.7rem;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-buttons a {
+    width: 80%;
+    max-width: 250px;
+    padding: 10px 20px;
+  }
+
+
+  /* ---------- INTRO ---------- */
+
+  .intro {
+    padding: 55px 20px;
+  }
+
+  .intro h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .intro p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+
+  /* ---------- PHOTOGRAPHER ---------- */
+
+  .photographer {
+    height: auto;
+    min-height: 0;
+    flex-direction: column;
+    padding: 50px 20px;
+    gap: 25px;
+  }
+
+  .photographer video {
+    width: 100%;
+    max-width: 450px;
+    max-height: none;
+  }
+
+  .photographer-card {
+    width: 100%;
+    margin-left: 0;
+    padding: 30px 25px;
+  }
+
+  .photographer-content {
+    width: 100%;
+  }
+
+  .photographer h2 {
+    font-size: 1.6rem;
+  }
+
+  .photographer h4 {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .photographer p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .photographer-buttons {
+    margin-top: 20px;
+  }
+
+  .photographer-buttons a {
+    display: inline-block;
+    padding: 10px 18px;
+  }
+
+
+  /* ---------- SERVICES ---------- */
+
+  .services {
+    padding: 55px 20px;
+  }
+
+  .services h2 {
+    font-size: 1.8rem;
+  }
+
+  .services p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .service {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .service img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  .service-info h3 {
+    font-size: 1.2rem;
+  }
+
+
+  /* ---------- HIRE ME ---------- */
+
+  .hire_me {
+    height: auto;
+    min-height: 0;
+    padding: 50px 20px;
+  }
+
+  .hire_me .photographer-content {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .hire-me-card {
+    width: 100%;
+    padding: 30px 25px;
+  }
+
+  .hire-me-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .hire-me-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+
+  /* ---------- TESTIMONIALS ---------- */
+
+  .testimonials-container {
+    zoom: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 55px 15px;
+    overflow: hidden;
+  }
+
+  .testimonials-container h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .testimonials-container h4 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .testimonials {
+    gap: 15px;
+    padding: 20px 5px;
+  }
+
+  .testimonial-box {
+    flex: 0 0 85%;
+    min-height: 200px;
+    padding: 20px;
+  }
+
+  .testimonial-box p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .client-info img {
+    width: 50px;
+    height: 40px;
+  }
+
+  .arrow-right,
+  .arrow-left {
+    font-size: 1.5rem;
+    padding: 7px;
+  }
+
+
+  /* ---------- ENQUIRE ---------- */
+
+  .enquire {
+    height: auto;
+    min-height: 70vh;
+    padding: 60px 20px;
+  }
+
+  .enquire h1 {
+    font-size: 2rem;
+  }
+
+  .enquire p {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  .enquire-button {
+    margin-top: 10px;
+  }
+
+
+  /* ---------- CONTACT ---------- */
+
+  .contact-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+
+  .contact-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+
+  .contact-info > p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .contact-item {
+    margin-bottom: 25px;
+  }
+
+  .contact-item p {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 15px;
+  }
+
+  .footer-section {
+    margin: 0;
+  }
+
+  .footer-section h3 {
+    font-size: 14px;
+  }
+
+  .footer-section ul li {
+    font-size: 11px;
+  }
+
+  .footer-bottom {
+    padding: 20px 15px;
+  }
+
+}
+
+
+/* ==========================================================
+   VERY SMALL PHONES
+   ========================================================== */
+
+@media (max-width: 400px) {
+
+  nav ul li a {
+    font-size: 0.7rem;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .hero-content {
+    padding-top: 150px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .intro h2 {
+    font-size: 1.4rem;
+  }
+
+  .photographer h2 {
+    font-size: 1.4rem;
+  }
+
+  .services h2 {
+    font-size: 1.6rem;
+  }
+
+  .enquire h1 {
+    font-size: 1.7rem;
+  }
+
+  .contact-info h2 {
+    font-size: 1.7rem;
+  }
+
+  .testimonial-box {
+    flex: 0 0 90%;
+  }
+
+}
